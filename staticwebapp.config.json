@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "route": "/blog/*",
+      "rewrite": "/blog"
+    }
+  ],
+  "navigationFallback": {
+    "document": "/index.html",
+    "exclude": ["/images/*.{png,jpg,gif,svg}", "/css/*", "/_next/*", "/screens/*"]
+  },
+  "globalHeaders": {
+    "cache-control": "public, max-age=0, must-revalidate"
+  },
+  "mimeTypes": {
+    ".json": "text/json"
+  }
+}
