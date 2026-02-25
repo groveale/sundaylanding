@@ -6,7 +6,7 @@
     }
   ],
   "navigationFallback": {
-    "document": "/index.html",
+    "rewrite": "/index.html",
     "exclude": ["/images/*.{png,jpg,gif,svg}", "/css/*", "/_next/*", "/screens/*"]
   },
   "globalHeaders": {
