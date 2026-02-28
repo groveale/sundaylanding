@@ -19,7 +19,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-[color:var(--surface)] py-24">
+    <section id="pricing" className="bg-[color:var(--bg)] py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-[color:var(--text-primary)]">Simple pricing</h2>
@@ -33,7 +33,7 @@ export default function Pricing() {
               className={`flex flex-col gap-6 rounded-3xl border p-8 ${
                 plan.highlight
                   ? "border-[color:var(--primary)] bg-[color:var(--primary)]/10"
-                  : "border-[color:var(--border)] bg-[color:var(--bg)]"
+                  : "border-[color:var(--border)] bg-[color:var(--surface)]"
               }`}
             >
               <div>

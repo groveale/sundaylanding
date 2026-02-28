@@ -29,7 +29,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="bg-[color:var(--bg)] py-24">
+    <section className="bg-[color:var(--surface)] py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-[color:var(--text-primary)]">Everything you need</h2>
@@ -40,7 +40,7 @@ export default function Features() {
           {features.map((f) => (
             <div
               key={f.title}
-              className="flex flex-col gap-6 rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8 md:flex-row"
+              className="flex flex-col gap-6 rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg)] p-8 md:flex-row"
             >
               <div className="flex flex-col gap-4 flex-1">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[color:var(--accent)] p-3">
