@@ -18,7 +18,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="bg-[color:var(--bg)] py-24">
+    <section className="bg-[color:var(--surface)] py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-[color:var(--text-primary)]">How it works</h2>
@@ -29,7 +29,7 @@ export default function HowItWorks() {
           {steps.map((step) => (
             <div
               key={step.n}
-              className="flex flex-col gap-4 rounded-3xl border border-[color:var(--border)] bg-[color:var(--surface)] p-8"
+              className="flex flex-col gap-4 rounded-3xl border border-[color:var(--border)] bg-[color:var(--bg)] p-8"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[color:var(--primary)] text-lg font-bold text-white">
                 {step.n}

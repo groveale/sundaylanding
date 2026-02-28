@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[color:var(--border)] bg-[color:var(--surface)] py-12">
+    <footer className="border-t border-[color:var(--border)] bg-[color:var(--bg)] py-12">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
           <div className="flex flex-col items-center gap-2 md:items-start">
@@ -13,7 +13,7 @@ export default function Footer() {
           <nav className="flex flex-wrap justify-center gap-6 text-sm text-[color:var(--text-secondary)]">
             <Link href="/blog" className="hover:text-[color:var(--text-primary)] transition-colors">Blog</Link>
             <a
-              href="https://apps.apple.com"
+              href="https://apps.apple.com/app/id6758394813"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[color:var(--text-primary)] transition-colors"

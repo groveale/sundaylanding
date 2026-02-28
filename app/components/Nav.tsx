@@ -27,7 +27,7 @@ export default function Nav() {
           </button>
 
           <a
-            href="https://apps.apple.com"
+            href="https://apps.apple.com/app/id6758394813"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-[color:var(--text-primary)] px-4 py-2 text-sm font-semibold text-[color:var(--bg)] transition-opacity hover:opacity-80"

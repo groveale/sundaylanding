@@ -1,17 +1,17 @@
 const plans = [
   {
     name: "Monthly",
-    price: "$1.99",
+    price: "$0.99",
     period: "/month",
-    badge: "Two Sundays free",
+    badge: "14-day free trial",
     features: ["Full app blocking", "Streak tracking", "Custom app selection", "Private & local only"],
     highlight: false,
   },
   {
     name: "Yearly",
-    price: "$11.99",
+    price: "$7.99",
     period: "/year",
-    badge: "Best value — first month free",
+    badge: "Best value — 14-day free trial",
     features: ["Full app blocking", "Streak tracking", "Custom app selection", "Private & local only"],
     highlight: true,
   },
@@ -19,7 +19,7 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-[color:var(--bg)] py-24">
+    <section id="pricing" className="bg-[color:var(--surface)] py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-[color:var(--text-primary)]">Simple pricing</h2>
@@ -33,7 +33,7 @@ export default function Pricing() {
               className={`flex flex-col gap-6 rounded-3xl border p-8 ${
                 plan.highlight
                   ? "border-[color:var(--primary)] bg-[color:var(--primary)]/10"
-                  : "border-[color:var(--border)] bg-[color:var(--surface)]"
+                  : "border-[color:var(--border)] bg-[color:var(--bg)]"
               }`}
             >
               <div>
@@ -56,7 +56,7 @@ export default function Pricing() {
                 ))}
               </ul>
               <a
-                href="https://apps.apple.com"
+                href="https://apps.apple.com/app/id6758394813"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`rounded-full py-3 text-center font-semibold transition-opacity hover:opacity-80 ${

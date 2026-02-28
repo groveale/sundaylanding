@@ -14,6 +14,12 @@ export default function BlogIndex() {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-24">
+      <Link
+        href="/"
+        className="mb-8 inline-block text-sm text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)] transition-colors"
+      >
+        ← Back to home
+      </Link>
       <h1 className="mb-4 text-4xl font-bold text-[color:var(--text-primary)]">Blog</h1>
       <p className="mb-16 text-lg text-[color:var(--text-secondary)]">
         On rest, screens, and reclaiming your time.
