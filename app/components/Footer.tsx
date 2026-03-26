@@ -21,6 +21,7 @@ export default function Footer() {
               App Store
             </a>
             <Link href="/privacy" className="hover:text-[color:var(--text-primary)] transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-[color:var(--text-primary)] transition-colors">Terms of Service</Link>
           </nav>
         </div>
 

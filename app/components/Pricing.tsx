@@ -3,13 +3,13 @@ const plans = [
     name: "Monthly",
     price: "$0.99",
     period: "/month",
-    badge: "14-day free trial",
+    badge: "No trial",
     features: ["Full app blocking", "Streak tracking", "Custom app selection", "Private & local only"],
     highlight: false,
   },
   {
     name: "Yearly",
-    price: "$7.99",
+    price: "$8.99",
     period: "/year",
     badge: "Best value — 14-day free trial",
     features: ["Full app blocking", "Streak tracking", "Custom app selection", "Private & local only"],
@@ -65,7 +65,7 @@ export default function Pricing() {
                     : "bg-[color:var(--text-primary)] text-[color:var(--bg)]"
                 }`}
               >
-                Start Free Trial
+                {plan.highlight ? "Start Free Trial" : "Get Started"}
               </a>
             </div>
           ))}
