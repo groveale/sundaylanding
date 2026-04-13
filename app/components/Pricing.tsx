@@ -1,17 +1,19 @@
 const plans = [
   {
-    name: "Monthly",
-    price: "$0.99",
-    period: "/month",
-    badge: "No trial",
+    name: "Yearly",
+    price: "$7.99",
+    period: "/year",
+    badge: "14-day free trial",
+    cta: "Start Free Trial",
     features: ["Full app blocking", "Streak tracking", "Custom app selection", "Private & local only"],
     highlight: false,
   },
   {
-    name: "Yearly",
+    name: "Lifetime",
     price: "$8.99",
-    period: "/year",
-    badge: "Best value — 14-day free trial",
+    period: " one-time",
+    badge: "Best value",
+    cta: "Get Lifetime Access",
     features: ["Full app blocking", "Streak tracking", "Custom app selection", "Private & local only"],
     highlight: true,
   },
@@ -65,11 +67,14 @@ export default function Pricing() {
                     : "bg-[color:var(--text-primary)] text-[color:var(--bg)]"
                 }`}
               >
-                {plan.highlight ? "Start Free Trial" : "Get Started"}
+                {plan.cta}
               </a>
             </div>
           ))}
         </div>
+        <p className="mt-8 text-center text-sm text-[color:var(--text-secondary)]">
+          Prices shown in USD&nbsp;·&nbsp;Local pricing may vary by region
+        </p>
       </div>
     </section>
   );
